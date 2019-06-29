@@ -1,5 +1,68 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+* {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+div:hover {
+    transition: all 500ms linear;
+}
+
+button {
+    transition: all 100ms ease-in-out;
+}
+
+button:hover {
+    transition: all 300ms linear;
+}
+
+button.clicked {
+    transform: scale(1.1);
+    transition: transform 100ms ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        box-shadow: none;
+        border-radius: 10px;
+        transform: scale(1.05);
+    }
+    12.5% {
+        box-shadow: 10px 10px 0px cornflowerblue;
+        transform: scale(1);
+    }
+    25% {
+        box-shadow: none;
+        transform: scale(1.05);
+    }
+    37.5% {
+        box-shadow: -10px 10px 0px palevioletred;
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: none;
+        transform: scale(1.05);
+    }
+    62.5% {
+        box-shadow: 10px -10px 0px darkolivegreen;
+        transform: scale(1);
+    }
+    75% {
+        box-shadow: none;
+        transform: scale(1.05);
+    }
+    87.5% {
+        box-shadow: -10px -10px 0px gold;
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: none;
+        border-radius: 10px;
+        transform: scale(1.05);
+    }
+}
